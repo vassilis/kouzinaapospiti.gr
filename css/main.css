@@ -57,8 +57,75 @@ textarea {
    ========================================================================== */
 
 
+body {
+  background: url("/img/25652151093_ea726f177d_k.jpg") fixed no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 100px;
+  color: #FFF;
+}
 
+.container {
+  padding: 0 30px;
+}
 
+.logo {
+  margin-top: 100px;
+}
+
+.intro {
+  font-weight: bold;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.btn-order {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.btn-order:hover {
+}
+
+.btn-order::before,
+.btn-order::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 70%;
+  left: 15%;
+  background: #FFF;
+  transition: all .5s;
+}
+
+.btn-order::before {
+  top: 0;
+}
+
+.btn-order::after {
+  bottom: 0;
+}
+
+.btn-order:hover::before,
+.btn-order:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 80%;
+  left: 10%;
+  font-size: 1em;
+  line-height: 2;
+}
 
 
 
@@ -74,8 +141,36 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-height: 700px) {
+  footer {
+    position: static;
+    margin-top: 100px;
+    width: auto;
+  }
+  .logo {
+    width: 400px;
+  }
+}
 
+@media only screen and (max-width: 800px) {
+  .logo {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 250px;
+  }
+  body {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .logo {
+    width: 150px;
+  }
 }
 
 @media print,
