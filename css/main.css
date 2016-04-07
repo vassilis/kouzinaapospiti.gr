@@ -264,6 +264,10 @@ Media Queries
 Helper classes
 ========================================================================== */
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .hidden {
   display: none !important;
   visibility: hidden;
