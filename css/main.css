@@ -66,6 +66,7 @@ body {
   padding-bottom: 100px;
   background: #000;
   color: #FFF;
+  border-top: 5px solid #000;
 }
 
 .slideshow { 
@@ -85,36 +86,44 @@ body {
   left: 0px;
   color: transparent;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 100%;
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  animation: slides 36s linear infinite 0s; 
+  animation: slides 30s linear infinite 0s; 
 }
 
 .slideshow div:nth-child(1) { 
-  background-image: url("/img/25652151093_ea726f177d_k.jpg");
+  background-image: url("/img/26113747930_686f33bed2_k.jpg");
 }
 .slideshow div:nth-child(2) { 
-  background-image: url("/img/26254937335_8cd961726b_k.jpg");
+  background-image: url("/img/26321564591_45b4cbd2bf_k.jpg");
   animation-delay: 6s; 
 }
 .slideshow div:nth-child(3) { 
-  background-image: url("/img/26190093491_413872a647_k.jpg");
+  background-image: url("/img/25652151093_ea726f177d_k.jpg");
   animation-delay: 12s; 
 }
 .slideshow div:nth-child(4) { 
-  background-image: url("/img/26229513566_57103b1c8c_k.jpg");
+  background-image: url("/img/26254937335_8cd961726b_k.jpg");
   animation-delay: 18s; 
 }
 .slideshow div:nth-child(5) { 
-  background-image: url("/img/25653604983_c5ee73427e_k.jpg");
+  background-image: url("/img/26229513566_57103b1c8c_k.jpg");
   animation-delay: 24s; 
 }
-.slideshow div:nth-child(6) { 
-  background-image: url("/img/25207892046_2c0ed16f0a_k.jpg");
-  animation-delay: 30s; 
-}
+/* .slideshow div:nth-child(3) { */ 
+/*   background-image: url("/img/26190093491_413872a647_k.jpg"); */
+/*   animation-delay: 12s; */ 
+/* } */
+/* .slideshow div:nth-child(5) { */ 
+/*   background-image: url("/img/25653604983_c5ee73427e_k.jpg"); */
+/*   animation-delay: 24s; */ 
+/* } */
+/* .slideshow div:nth-child(6) { */ 
+/*   background-image: url("/img/25207892046_2c0ed16f0a_k.jpg"); */
+/*   animation-delay: 30s; */ 
+/* } */
 
 @keyframes slides {
   0% {
@@ -142,7 +151,8 @@ body {
 }
 
 .logo {
-  margin-top: 100px;
+  margin: 100px auto 150px;
+  display: block;
 }
 
 .intro {
@@ -152,7 +162,7 @@ body {
 }
 
 .btn-order {
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: bold;
   display: inline-block;
   cursor: pointer;
@@ -191,12 +201,25 @@ body {
 
 footer {
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   text-align: center;
-  width: 80%;
-  left: 10%;
-  font-size: 1em;
+  width: 100%;
+  left: 0;
+  font-size: 1.1em;
   line-height: 2;
+  background: #FFF;
+  color: #111;
+  border-top: 5px solid #000;
+  padding: 0 0 30px;
+}
+
+.app-stores a {
+  text-decoration: none !important;
+}
+
+.app-stores img {
+  height: 70px;
+  margin: 10px;
 }
 
 
