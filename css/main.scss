@@ -71,7 +71,8 @@ body {
   text-align: center;
   background: #FFF;
   color: #333;
-  background: url("/img/bg.png") fixed;
+  background: url("/img/top.png") 0 0 repeat-x, url("/img/bg.png") fixed;
+  padding-top: 5px;
 }
 
 .container {
@@ -119,7 +120,7 @@ body {
   background: url("/img/bg-dark.png") fixed;
   border-bottom: 2px solid #FFF;
   p {
-    line-height: 2;
+    line-height: 1.6;
     font-size: 2em;
     color: #FFF;
     margin: 0 auto;
