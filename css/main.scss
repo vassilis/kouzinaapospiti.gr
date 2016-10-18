@@ -281,10 +281,23 @@ footer {
 
 .menu {
   max-width: 1180px;
-  margin: 0 auto;
-  padding: 100px 100px 0;
+  margin: 100px auto 0;
+  position: relative;
   h3 {
+    display: inline-block;
     margin-bottom: 40px;
+    padding: 0 20px;
+    background: url("/img/bg.png") fixed;
+    &::after {
+      content: "";
+      display: block;
+      width: 98%;
+      position: absolute;
+      top: 15px;
+      left: 1%;
+      border-bottom: 1px dotted #a2a2a2;
+      z-index: -1;
+    }
   }
 }
 
@@ -294,7 +307,7 @@ footer {
   position: relative;
   strong {
     text-overflow: ellipsis;
-    max-width: 300px;
+    max-width: 330px;
     white-space: nowrap;
     overflow: hidden;
     padding: 10px;
@@ -318,4 +331,10 @@ footer {
     bottom: 16px;
     z-index: -1;
   }
+}
+
+.map {
+  margin: 100px 0 0;
+  border-top: 10px solid #000;
+  border-bottom: 10px solid #000;
 }
