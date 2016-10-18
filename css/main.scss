@@ -2,6 +2,7 @@
 ---
 
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=greek,latin");
+@import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
 
 @import "vendor/bootstrap/bootstrap";
 @import "vendor/slick";
@@ -284,6 +285,8 @@ footer {
   margin: 100px auto 0;
   position: relative;
   h3 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 2.5em;
     display: inline-block;
     margin-bottom: 40px;
     padding: 0 20px;
@@ -293,7 +296,7 @@ footer {
       display: block;
       width: 98%;
       position: absolute;
-      top: 15px;
+      top: 22px;
       left: 1%;
       border-bottom: 1px dotted #a2a2a2;
       z-index: -1;
