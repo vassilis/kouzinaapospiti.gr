@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -10,54 +12,11 @@
         <meta name="description" content="Κουζίνα από Σπίτι, Χαλκίδα">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/normalize.min.css">
+        <link rel="stylesheet" href="/css/main.css">
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png?v=NmmyYBJnj2">
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png?v=NmmyYBJnj2">
-        <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png?v=NmmyYBJnj2" sizes="32x32">
-        <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png?v=NmmyYBJnj2" sizes="194x194">
-        <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png?v=NmmyYBJnj2" sizes="96x96">
-        <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png?v=NmmyYBJnj2" sizes="192x192">
-        <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png?v=NmmyYBJnj2" sizes="16x16">
-        <link rel="manifest" href="/favicons/manifest.json?v=NmmyYBJnj2">
-        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg?v=NmmyYBJnj2" color="#5bbad5">
-        <link rel="shortcut icon" href="/favicons/favicon.ico?v=NmmyYBJnj2">
-        <meta name="apple-mobile-web-app-title" content="Kouzina">
-        <meta name="application-name" content="Kouzina">
-        <meta name="msapplication-TileColor" content="#d1bd96">
-        <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png?v=NmmyYBJnj2">
-        <meta name="msapplication-config" content="/favicons/browserconfig.xml?v=NmmyYBJnj2">
-        <meta name="theme-color" content="#000000">
-
-        <!-- facebook preview --> 
-        <meta property="og:url"           content="http://kouzinaapospiti.gr" />
-        <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Κουζίνα από Σπίτι" />
-        <meta property="og:description"   content="Κάθε μέρα μαγειρεύουμε υγιεινά, λαχταριστά πιάτα για να μπορούν όλοι να απολαμβάνουν σπιτικό φαγητό." />
-        <meta property="og:image"         content="http://kouzinaapospiti.gr/img/26113747930_686f33bed2_k.jpg" />
-
-        <!-- Facebook Pixel Code -->
-        <script>
-          !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-          n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-          document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-          fbq('init', '643826932436390');
-          fbq('track', "PageView");</script>
-        <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=643826932436390&ev=PageView&noscript=1"
-          /></noscript>
-        <!-- End Facebook Pixel Code -->
+        {% include favicon.html %}
+        {% include facebook.html %}
 
         <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -69,50 +28,76 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container">
-          <img src="/img/logo.png" alt="Κουζίνα από Σπίτι" class="logo">
-          <!--
-          <p class="intro">Κάθε μέρα μαγειρεύουμε υγιεινά, λαχταριστά πιάτα
-            για να μπορούν όλοι να απολαμβάνουν σπιτικό φαγητό</p>
-          -->
+        <!-- <div class="container"> -->
+        <div class="text-top">
+          Διανομή κατ'οίκον
+          <span class="nowrap">Δευτέρα - Σάββατο 12:00 μ.μ. - 5:00 μ.μ.</span><br>
+          Τηλεφωνικές παραγγελίες
+          <span class="nowrap">22210 89077 και 6931 234081</span><br>
+          Χαϊνά 60 - Χαλκίδα
+        </div>
 
-          <span class="btn-order" data-glf-cuid="99c407c2-9a73-4089-b6d4-82541c3af76a" data-glf-ruid="69051775-f3cc-40fb-b882-361ffa6c6b4f" data-glf-auto-open="false">ΠΑΡΑΓΓΕΛΙΑ ONLINE</span> 
+          <div class="intro">
+            <div class="slider">
+              <div class="img1"></div>
+              <div class="img2"></div>
+              <div class="img3"></div>
+              <div class="img4"></div>
+              <div class="img5"></div>
+              <div class="img6"></div>
+              <div class="img7"></div>
+            </div>
+            <img src="/img/logo.png" alt="Κουζίνα από Σπίτι" class="logo">
+            <span class="btn-order" data-glf-cuid="99c407c2-9a73-4089-b6d4-82541c3af76a" data-glf-ruid="69051775-f3cc-40fb-b882-361ffa6c6b4f" data-glf-auto-open="false">ΠΑΡΑΓΓΕΛΙΑ ONLINE</span>
+          </div>
 
-          <footer>
-            <p class="app-stores">
-              <a href="https://www.facebook.com/kouzinaapospiti/" target="_blank">
-                <img src="/img/fb.png" alt="Like our page on Facebook">
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.shopilab.kouzinaapospiti" target="_blank">
-                <img src="/img/google-play-badge-el.png" alt="Google PLay">
-              </a>
+          <div class="text1">
+            <p>Κάθε μέρα μαγειρεύουμε για εσάς υγιεινά, νόστιμα, σπιτικά φαγητά,
+            με φρεσκότατα υλικά ημέρας</p>
+          </div>
+
+          <div class="photos">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+            <div class="img5"></div>
+            <div class="img6"></div>
+            <div class="img7"></div>
+            <div class="img8"></div>
+            <div class="img9"></div>
+            <div class="img10"></div>
+            <div class="img11"></div>
+            <div class="img12"></div>
+          </div>
+
+          <div class="text2">
+            <p>
+              Το ρεπερτόριό μας είναι αρκετά μεγάλο!<br>
+              Για να δείτε τι από τα παρακάτω υπάρχει διαθέσιμο τώρα,<br>
+              <span class="btn-order2" data-glf-cuid="99c407c2-9a73-4089-b6d4-82541c3af76a" data-glf-ruid="69051775-f3cc-40fb-b882-361ffa6c6b4f" data-glf-auto-open="false">ανοίξτε τον κατάλογο</span>
+              <br>για τις online παραγγελίες!
             </p>
-            Διανομή κατ'οίκον
-            <span class="nowrap">Δευτέρα - Σάββατο 12:00 μ.μ. - 5:00 μ.μ.</span><br>
-            Τηλεφωνικές παραγγελίες
-            <span class="nowrap">22210 89077 και 6931 234081</span><br>
-            Χαϊνά 60 - Χαλκίδα
-          </footer>
-        </div>
+          </div>
 
-        <div class="slideshow">
-          <div class="slide-1"></div>
-          <div class="slide-2"></div>
-          <div class="slide-3"></div>
-          <div class="slide-4"></div>
-          <div class="slide-5"></div>
-        </div>
+          {% include menu.html %}
+          {% include footer.html %}
+        <!-- </div> -->
 
+        <!-- <div class="slideshow"> -->
+          <!-- <div class="slide-1"></div> -->
+          <!-- <div class="slide-2"></div> -->
+          <!-- <div class="slide-3"></div> -->
+          <!-- <div class="slide-4"></div> -->
+          <!-- <div class="slide-5"></div> -->
+        <!-- </div> -->
+
+          <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script src="/js/vendor/slick.min.js"></script>
+          <script src="/js/main.js"></script>
           <script src="https://www.foodbooking.com/widget/js/ewm2.js" defer async></script>
 
-          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-          <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-              e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-              e.src='//www.google-analytics.com/analytics.js';
-              r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-54447212-8','auto');ga('send','pageview');
-        </script>
+          {% include analytics.html %}
     </body>
 </html>
