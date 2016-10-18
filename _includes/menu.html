@@ -1,17 +1,19 @@
 
 
-{% for category in site.data.menu %}
-  <div class="menu">
-    <h3>{{ category.name }}</h3>
-    <div class="row">
-      {% for dish in category.dishes %}
-        <div class="col-lg-6">
-          <div class="recipe">
-            <strong>{{ dish.name }}</strong>
-            <span class="price">{{ dish.price }}</span>
+<div class="menu">
+  {% for category in site.data.menu %}
+    <div class="menu-section">
+      <h3>{{ category.name }}</h3>
+      <div class="row">
+        {% for dish in category.dishes %}
+          <div class="col-lg-6">
+            <div class="recipe">
+              <strong>{{ dish.name }}</strong>
+              <span class="price">{{ dish.price }}</span>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
+</div>

@@ -281,8 +281,13 @@ footer {
 }
 
 .menu {
+  border-top: 2px solid #FFF;
+}
+
+.menu-section {
   max-width: 1180px;
-  margin: 100px auto 0;
+  margin: 0 auto;
+  padding-top: 100px;
   position: relative;
   h3 {
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -296,7 +301,7 @@ footer {
       display: block;
       width: 98%;
       position: absolute;
-      top: 21px;
+      top: 120px;
       left: 1%;
       border-bottom: 3px solid #333;
       z-index: -1;
