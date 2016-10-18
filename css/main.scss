@@ -70,7 +70,7 @@ body {
   text-align: center;
   background: #FFF;
   color: #333;
-  /*border-top: 5px solid #000;*/
+  background: url("/img/bg.png") fixed;
 }
 
 .container {
@@ -105,7 +105,7 @@ body {
 }
 
 .text-top {
-  background: url("/img/content-tail.gif");
+  background: url("/img/bg-dark.png") fixed;
   border-bottom: 2px solid #FFF;
   line-height: 1.5;
   font-size: 1.2em;
@@ -115,7 +115,7 @@ body {
 }
 
 .text1 {
-  background: url("/img/content-tail.gif");
+  background: url("/img/bg-dark.png") fixed;
   border-bottom: 2px solid #FFF;
   p {
     line-height: 2;
@@ -128,7 +128,7 @@ body {
 }
 
 .text2 {
-  background: url("/img/content-tail.gif");
+  background: url("/img/bg-dark.png") fixed;
   border-top: 2px solid #FFF;
   border-bottom: 2px solid #FFF;
   p {
@@ -288,13 +288,13 @@ footer {
     padding: 10px;
     float: left;
     display: inline-block;
-    background: #FFF;
+    background: url("/img/bg.png") fixed;
   }
   .price {
     padding: 10px;
     float: right;
     display: inline-block;
-    background: #FFF;
+    background: url("/img/bg.png") fixed;
   }
   &::after {
     position: absolute;
