@@ -2,9 +2,6 @@
 title: Kouzinaapospiti.Gr
 timezone: Europe/Athens
 collections:
-  menu:
-    title: Menu
-    output: true
   posts:
     title: Posts
     output: true
