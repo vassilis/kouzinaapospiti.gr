@@ -81,6 +81,7 @@ body {
 
 .logo {
   width: 350px;
+  max-width: 80%;
   margin: 0 auto 150px;
   display: block;
   position: relative;
@@ -92,8 +93,9 @@ body {
   font-weight: bold;
   /*max-width: 600px;*/
   /*margin: 50px auto;*/
-  padding: 100px;
+  padding: 85px 0;
   position: relative;
+  overflow: hidden;
   div {
     position: absolute;
     top: 0;
@@ -126,6 +128,10 @@ body {
     margin: 0 auto;
     padding: 100px;
     max-width: 800px;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.3em;
+      padding: 50px;
+    }
   }
 }
 
@@ -215,6 +221,9 @@ body {
   color: #FFF;
   position: relative;
   z-index: 2;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.6em;
+  }
 }
 
 .btn-order2 {
