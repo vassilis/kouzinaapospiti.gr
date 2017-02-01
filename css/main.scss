@@ -96,6 +96,7 @@ body {
   padding: 85px 0;
   position: relative;
   overflow: hidden;
+  border-bottom: 2px solid #FFF;
   div {
     position: absolute;
     top: 0;
@@ -355,4 +356,11 @@ footer {
   margin: 100px 0 0;
   border-top: 10px solid #000;
   border-bottom: 10px solid #000;
+}
+
+.special {
+  display: block;
+  height: 600px;
+  background: url("/img/friday-night.jpg") 50% 0;
+  border-bottom: 2px solid #FFF;
 }
