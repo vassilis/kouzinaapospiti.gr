@@ -29,16 +29,21 @@
           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!--<a href="https://www.facebook.com/events/178182609334029/" target="_blank" class="special"></a>-->
+        <div class="container">
 
-        <!-- <div class="container"> -->
-        <div class="text-top">
-          Διανομή κατ'οίκον
-          <span class="nowrap">Δευτέρα - Σάββατο 12:00 μ.μ. - 5:00 μ.μ.</span><br>
-          Τηλεφωνικές παραγγελίες
-          <span class="nowrap">22210 89077 και 6931 234081</span><br>
-          Χαϊνά 60 - Χαλκίδα
-        </div>
+          <header>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="/img/logo.svg" alt="Κουζίνα από Σπίτι" class="logo">
+              </div>
+              <div class="col-md-6">
+                <span class="btn-order" data-glf-cuid="99c407c2-9a73-4089-b6d4-82541c3af76a" data-glf-ruid="69051775-f3cc-40fb-b882-361ffa6c6b4f" data-glf-auto-open="false">
+                  <span class="small">πατήστε εδώ για να δείτε τι υπάρχει διαθέσιμο από αυτά που μαγειρέψαμε σήμερα και να κάνετε</span>
+                  <span>ΠΑΡΑΓΓΕΛΙΑ ONLINE</span>
+                </span>
+              </div>
+            </div>
+          </header>
 
           <div class="intro">
             <div class="slider">
@@ -50,65 +55,26 @@
               <div class="img14"></div>
               <div class="img15"></div>
             </div>
-            <img src="/img/logo.png" alt="Κουζίνα από Σπίτι" class="logo">
-            <span class="btn-order" data-glf-cuid="99c407c2-9a73-4089-b6d4-82541c3af76a" data-glf-ruid="69051775-f3cc-40fb-b882-361ffa6c6b4f" data-glf-auto-open="false">ΠΑΡΑΓΓΕΛΙΑ ONLINE</span>
           </div>
 
-          <div class="text1">
-            <p>Κάθε μέρα μαγειρεύουμε για εσάς υγιεινά, νόστιμα, σπιτικά φαγητά,
-            με φρεσκότατα υλικά ημέρας</p>
+          <div class="text-top">
+            Διανομή κατ'οίκον
+            <span class="nowrap">Δευτέρα - Σάββατο 12:00 μ.μ. - 5:00 μ.μ.</span><br>
+            Τηλεφωνικές παραγγελίες
+            <span class="nowrap">22210 89077 και 6931 234081</span><br>
+            Χαϊνά 60 - Χαλκίδα
           </div>
 
-          <div class="photos hidden-sm-down">
-            <div class="img1"></div>
-            <div class="img2"></div>
-            <div class="img3"></div>
-            <div class="img4"></div>
-            <div class="img5"></div>
-            <div class="img6"></div>
-            <div class="img7"></div>
-            <div class="img8"></div>
-          </div>
-
-          <div class="text2">
-            <p>
-              Το ρεπερτόριό μας είναι αρκετά μεγάλο!<br>
-              Για να δείτε τι από τα παρακάτω υπάρχει διαθέσιμο τώρα,
-              <span class="btn-order2" data-glf-cuid="99c407c2-9a73-4089-b6d4-82541c3af76a" data-glf-ruid="69051775-f3cc-40fb-b882-361ffa6c6b4f" data-glf-auto-open="false">ανοίξτε τον κατάλογο</span>
-              για τις online παραγγελίες!
-            </p>
-          </div>
-
-          <div class="photos hidden-sm-down">
-            <div class="img9"></div>
-            <div class="img10"></div>
-            <div class="img11"></div>
-            <div class="img12"></div>
-            <div class="img13"></div>
-            <div class="img14"></div>
-            <div class="img15"></div>
-            <div class="img16"></div>
-          </div>
-
-          {% include menu.html %}
           {% include map.html %}
           {% include footer.html %}
-        <!-- </div> -->
+        </div>
 
-        <!-- <div class="slideshow"> -->
-          <!-- <div class="slide-1"></div> -->
-          <!-- <div class="slide-2"></div> -->
-          <!-- <div class="slide-3"></div> -->
-          <!-- <div class="slide-4"></div> -->
-          <!-- <div class="slide-5"></div> -->
-        <!-- </div> -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="/js/vendor/slick.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="https://www.foodbooking.com/widget/js/ewm2.js" defer async></script>
 
-          <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-          <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-          <script src="/js/vendor/slick.min.js"></script>
-          <script src="/js/main.js"></script>
-          <script src="https://www.foodbooking.com/widget/js/ewm2.js" defer async></script>
-
-          {% include analytics.html %}
+        {% include analytics.html %}
     </body>
 </html>

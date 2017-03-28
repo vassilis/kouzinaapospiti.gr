@@ -1,8 +1,10 @@
 ---
 ---
 
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=greek,latin");
-@import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
+// @import url("//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=greek,latin");
+// @import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
+// @import url("//fonts.googleapis.com/css?family=Ubuntu+Condensed");
+@import url('//fonts.googleapis.com/css?family=Nova+Mono');
 
 @import "vendor/bootstrap/bootstrap";
 @import "vendor/slick";
@@ -10,10 +12,16 @@
 
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nova Mono', sans-serif;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1500px;
+  }
 }
 
 ::-moz-selection {
@@ -68,35 +76,46 @@ Author's custom styles
 
 
 body {
-  text-align: center;
   background: #FFF;
   color: #333;
-  background: url("/img/top.png") 0 0 repeat-x, url("/img/bg.png") fixed;
-  padding-top: 5px;
+  background: url("/img/green.jpg") fixed;
+  background-size: cover;
+  // padding-top: 5px;
 }
 
 .container {
-  padding: 0 30px;
+  padding: 0;
+  border-left: 15px solid rgba(#000, .2);
+  border-right: 15px solid rgba(#000, .2);
+}
+
+header {
+  background: url("/img/chalkboard.jpg");
+  background-size: cover;
+  padding: 30px 50px;
 }
 
 .logo {
-  width: 350px;
-  max-width: 80%;
-  margin: 0 auto 150px;
-  display: block;
-  position: relative;
-  z-index: 2;
+  // width: 350px;
+  // max-width: 80%;
+  // margin: 0 auto 150px;
+  // margin: 30px;
+  // display: block;
+  // position: relative;
+  // z-index: 2;
 }
 
 .intro {
-  // background-image: url("/img/26113747930_686f33bed2_k.jpg");
   font-weight: bold;
+  background-image: url("/img/chalkboard.jpg");
   /*max-width: 600px;*/
   /*margin: 50px auto;*/
-  padding: 85px 0;
+  // padding: 85px 0;
+  height: 600px;
   position: relative;
   overflow: hidden;
-  border-bottom: 2px solid #FFF;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   div {
     position: absolute;
     top: 0;
@@ -110,45 +129,49 @@ body {
 }
 
 .text-top {
-  background: url("/img/bg-dark.png") fixed;
-  border-bottom: 2px solid #FFF;
-  line-height: 1.5;
-  font-size: 1.2em;
-  color: #FFF;
+  font-family: 'Nova Mono', sans-serif;
+  background: url("/img/chalkboard.jpg") bottom;
+  background-size: cover;
+  border-bottom: 2px solid #000;
+  line-height: 2;
+  font-size: 1.4em;
+  color: #ffffe0;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
-.text1 {
-  background: url("/img/bg-dark.png") fixed;
-  border-bottom: 2px solid #FFF;
-  p {
-    line-height: 1.6;
-    font-size: 2em;
-    color: #FFF;
-    margin: 0 auto;
-    padding: 100px;
-    max-width: 800px;
-    @include media-breakpoint-down(sm) {
-      font-size: 1.3em;
-      padding: 50px;
-    }
-  }
-}
-
-.text2 {
-  background: url("/img/bg-dark.png") fixed;
-  border-top: 2px solid #FFF;
-  border-bottom: 2px solid #FFF;
-  p {
-    line-height: 2;
-    font-size: 1.3em;
-    color: #FFF;
-    margin: 0 auto;
-    padding: 50px;
-    max-width: 800px;
-  }
-}
+// .text1 {
+//   background: url("/img/bg-dark.png") fixed;
+//   border-bottom: 2px solid #FFF;
+//   p {
+//     line-height: 1.6;
+//     font-size: 2em;
+//     color: #FFF;
+//     margin: 0 auto;
+//     padding: 100px;
+//     max-width: 800px;
+//     @include media-breakpoint-down(sm) {
+//       font-size: 1.3em;
+//       padding: 50px;
+//     }
+//   }
+// }
+//
+// .text2 {
+//   background: url("/img/bg-dark.png") fixed;
+//   border-top: 2px solid #FFF;
+//   border-bottom: 2px solid #FFF;
+//   p {
+//     line-height: 2;
+//     font-size: 1.3em;
+//     color: #FFF;
+//     margin: 0 auto;
+//     padding: 50px;
+//     max-width: 800px;
+//   }
+// }
 
 .photos {
   overflow: hidden;
@@ -213,77 +236,82 @@ body {
 }
 
 .btn-order {
-  font-size: 2.2em;
-  font-weight: bold;
+  font-family: 'Nova Mono', sans-serif;
+  font-size: 2.5em;
+  text-align: center;
   display: inline-block;
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  color: #FFF;
+  color: #d22500;
   position: relative;
+  margin-top: 35px;
   z-index: 2;
   @include media-breakpoint-down(sm) {
     font-size: 1.6em;
   }
+  .small {
+    font-size: 1.2rem;
+    color: #ffffe0;
+    display: block;
+    max-width: 515px;
+  }
 }
 
-.btn-order2 {
-  font-size: 1.2em;
-  font-weight: bold;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  padding: 0 10px;
-  color: #FFF;
-  position: relative;
-  z-index: 2;
-}
+// .btn-order2 {
+//   font-size: 1.2em;
+//   font-weight: bold;
+//   display: inline-block;
+//   cursor: pointer;
+//   position: relative;
+//   padding: 0 10px;
+//   color: #FFF;
+//   position: relative;
+//   z-index: 2;
+// }
 
-.btn-order:hover {
-}
-
-.btn-order::before,
-.btn-order::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 70%;
-  left: 15%;
-  background: #FFF;
-  transition: all .5s;
-}
-
-.btn-order::before {
-  top: 0;
-}
-
-.btn-order::after {
-  bottom: 0;
-}
-
-.btn-order:hover::before,
-.btn-order:hover::after {
-  left: 0;
-  width: 100%;
-}
+// .btn-order:hover {
+// }
+//
+// .btn-order::before,
+// .btn-order::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   height: 2px;
+//   width: 70%;
+//   left: 15%;
+//   background: #FFF;
+//   transition: all .5s;
+// }
+//
+// .btn-order::before {
+//   top: 0;
+// }
+//
+// .btn-order::after {
+//   bottom: 0;
+// }
+//
+// .btn-order:hover::before,
+// .btn-order:hover::after {
+//   left: 0;
+//   width: 100%;
+// }
 
 footer {
-  /*position: absolute;*/
-  /*bottom: 0;*/
+  font-family: 'Nova Mono', sans-serif;
   text-align: center;
-  /*width: 100%;*/
-  /*left: 0;*/
   font-size: 1.1em;
   line-height: 2;
-  /*background: #FFF;*/
-  /*color: #111;*/
-  /*border-top: 5px solid #000;*/
+  background: url("/img/chalkboard.jpg") bottom;
+  background-size: cover;
   padding: 100px;
 }
 
 .app-stores a {
   text-decoration: none !important;
+  color: #ffffe0;
 }
 
 .app-stores img {
@@ -291,76 +319,74 @@ footer {
   margin: 10px;
 }
 
-.menu {
-  border-top: 2px solid #FFF;
-}
+// .menu {
+//   border-top: 2px solid #FFF;
+// }
+//
+// .menu-section {
+//   max-width: 1180px;
+//   margin: 0 auto;
+//   padding-top: 100px;
+//   position: relative;
+//   h3 {
+//     font-family: 'Ubuntu Condensed', sans-serif;
+//     font-size: 2.5em;
+//     display: inline-block;
+//     margin-bottom: 40px;
+//     padding: 0 20px;
+//     background: url("/img/bg.png") fixed;
+//     &::after {
+//       content: "";
+//       display: block;
+//       width: 98%;
+//       position: absolute;
+//       top: 120px;
+//       left: 1%;
+//       border-bottom: 3px solid #333;
+//       z-index: -1;
+//     }
+//   }
+// }
 
-.menu-section {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-top: 100px;
-  position: relative;
-  h3 {
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 2.5em;
-    display: inline-block;
-    margin-bottom: 40px;
-    padding: 0 20px;
-    background: url("/img/bg.png") fixed;
-    &::after {
-      content: "";
-      display: block;
-      width: 98%;
-      position: absolute;
-      top: 120px;
-      left: 1%;
-      border-bottom: 3px solid #333;
-      z-index: -1;
-    }
-  }
-}
-
-.recipe {
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  strong {
-    text-overflow: ellipsis;
-    max-width: 330px;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 10px;
-    float: left;
-    display: inline-block;
-    background: url("/img/bg.png") fixed;
-  }
-  .price {
-    padding: 10px;
-    float: right;
-    display: inline-block;
-    background: url("/img/bg.png") fixed;
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    width: 100%;
-    border-bottom: 1px dotted #a2a2a2;
-    left: 0;
-    bottom: 16px;
-    z-index: -1;
-  }
-}
+// .recipe {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   position: relative;
+//   strong {
+//     text-overflow: ellipsis;
+//     max-width: 330px;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     padding: 10px;
+//     float: left;
+//     display: inline-block;
+//     background: url("/img/bg.png") fixed;
+//   }
+//   .price {
+//     padding: 10px;
+//     float: right;
+//     display: inline-block;
+//     background: url("/img/bg.png") fixed;
+//   }
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     display: inline-block;
+//     width: 100%;
+//     border-bottom: 1px dotted #a2a2a2;
+//     left: 0;
+//     bottom: 16px;
+//     z-index: -1;
+//   }
+// }
 
 .map {
-  margin: 100px 0 0;
-  border-top: 10px solid #000;
-  border-bottom: 10px solid #000;
+  border-bottom: 2px solid #000;
 }
 
-.special {
-  display: block;
-  height: 600px;
-  background: url("/img/friday-night.jpg") 50% 0;
-  border-bottom: 2px solid #FFF;
-}
+// .special {
+//   display: block;
+//   height: 600px;
+//   background: url("/img/friday-night.jpg") 50% 0;
+//   border-bottom: 2px solid #FFF;
+// }
