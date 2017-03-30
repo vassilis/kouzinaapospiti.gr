@@ -78,7 +78,7 @@ Author's custom styles
 body {
   background: #FFF;
   color: #333;
-  background: url("/img/green.jpg") fixed;
+  background: url("/img/green.jpg") 100% 0 fixed;
   background-size: cover;
   // padding-top: 5px;
 }
