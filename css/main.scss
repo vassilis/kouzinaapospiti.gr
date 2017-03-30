@@ -137,8 +137,7 @@ header {
   font-size: 1.4em;
   color: #ffffe0;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 15px;
   text-align: center;
 }
 
@@ -187,53 +186,53 @@ header {
 }
 
 .img1 {
-  background-image: url("/img/26321564591_45b4cbd2bf_k.jpg");
+  background-image: url("/img/26321564591_45b4cbd2bf_k_x.jpg");
 }
-.img2 {
-  background-image: url("/img/26361267566_32ea855562_k.jpg");
-}
+// .img2 {
+//   background-image: url("/img/26361267566_32ea855562_k.jpg");
+// }
 .img3 {
-  background-image: url("/img/26254937335_8cd961726b_k.jpg");
+  background-image: url("/img/26254937335_8cd961726b_k_x.jpg");
 }
-.img4 {
-  background-image: url("/img/26294937522_5fb019e3b7_k.jpg");
-}
+// .img4 {
+//   background-image: url("/img/26294937522_5fb019e3b7_k.jpg");
+// }
 .img5 {
-  background-image: url("/img/24603315304_82e6f8271a_k.jpg");
+  background-image: url("/img/24603315304_82e6f8271a_k_x.jpg");
 }
-.img6 {
-  background-image: url("/img/25653604983_c5ee73427e_k.jpg");
-}
-.img7 {
-  background-image: url("/img/25115653832_f36f9172ff_k.jpg");
-}
+// .img6 {
+//   background-image: url("/img/25653604983_c5ee73427e_k.jpg");
+// }
+// .img7 {
+//   background-image: url("/img/25115653832_f36f9172ff_k.jpg");
+// }
 .img8 {
-  background-image: url("/img/26113747930_686f33bed2_k.jpg");
+  background-image: url("/img/26113747930_686f33bed2_k_x.jpg");
 }
-.img9 {
-  background-image: url("/img/26113488820_aa3a4a6695_k.jpg");
-}
-.img10 {
-  background-image: url("/img/26190093491_413872a647_k.jpg");
-}
-.img11 {
-  background-image: url("/img/25784494413_d900379ef1_k.jpg");
-}
-.img12 {
-  background-image: url("/img/25207892046_2c0ed16f0a_k.jpg");
-}
-.img13 {
-  background-image: url("/img/24938213760_2550cd48be_k.jpg");
-}
+// .img9 {
+//   background-image: url("/img/26113488820_aa3a4a6695_k.jpg");
+// }
+// .img10 {
+//   background-image: url("/img/26190093491_413872a647_k.jpg");
+// }
+// .img11 {
+//   background-image: url("/img/25784494413_d900379ef1_k.jpg");
+// }
+// .img12 {
+//   background-image: url("/img/25207892046_2c0ed16f0a_k.jpg");
+// }
+// .img13 {
+//   background-image: url("/img/24938213760_2550cd48be_k.jpg");
+// }
 .img14 {
-  background-image: url("/img/26229513566_57103b1c8c_k.jpg");
+  background-image: url("/img/26229513566_57103b1c8c_k_x.jpg");
 }
 .img15 {
-  background-image: url("/img/25652151093_ea726f177d_k.jpg");
+  background-image: url("/img/25652151093_ea726f177d_k_x.jpg");
 }
-.img16 {
-  background-image: url("/img/26190093491_413872a647_k.jpg");
-}
+// .img16 {
+//   background-image: url("/img/26190093491_413872a647_k.jpg");
+// }
 
 .btn-order {
   font-family: 'Nova Mono', sans-serif;
@@ -302,11 +301,12 @@ header {
 footer {
   font-family: 'Nova Mono', sans-serif;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 2;
   background: url("/img/chalkboard.jpg") bottom;
   background-size: cover;
-  padding: 100px;
+  padding: 100px 30px;
+  color: #ffffe0;
 }
 
 .app-stores a {
@@ -315,8 +315,9 @@ footer {
 }
 
 .app-stores img {
-  height: 150px;
-  margin: 10px;
+  margin: 10px 0;
+  max-width: 100%;
+  max-height: 150px;
 }
 
 // .menu {
@@ -390,3 +391,7 @@ footer {
 //   background: url("/img/friday-night.jpg") 50% 0;
 //   border-bottom: 2px solid #FFF;
 // }
+
+.nowrap {
+  white-space: nowrap;
+}
