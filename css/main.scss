@@ -89,6 +89,12 @@ body {
   border-right: 15px solid rgba(#000, .2);
 }
 
+@include media-breakpoint-down(xs) {
+  .container {
+    border: 0;
+  }
+}
+
 header {
   background: url("/img/chalkboard.jpg");
   background-size: cover;
@@ -96,6 +102,7 @@ header {
 }
 
 .logo {
+  max-width: 100%;
   // width: 350px;
   // max-width: 80%;
   // margin: 0 auto 150px;
@@ -106,8 +113,10 @@ header {
 }
 
 .intro {
-  font-weight: bold;
-  background-image: url("/img/chalkboard.jpg");
+  background-image: url("/img/26254937335_8cd961726b_k_x.jpg");
+  background-size: cover;
+  background-position: center;
+  // font-weight: bold;
   /*max-width: 600px;*/
   /*margin: 50px auto;*/
   // padding: 85px 0;
@@ -116,6 +125,9 @@ header {
   overflow: hidden;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+  .slider {
+    background-image: url("/img/chalkboard.jpg");
+  }
   div {
     position: absolute;
     top: 0;
